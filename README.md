@@ -60,6 +60,7 @@
 
 ## **3. 依賴項目安裝**
 ```pip install tqdm pdfplumber PyMuPDF easyocr pillow numpy tenacity voyageai ```
+- 詳細版本請參考 `requirements.txt`。
 
 ---
 
