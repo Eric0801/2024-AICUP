@@ -59,8 +59,9 @@
 ---
 
 ## **3. 依賴項目安裝**
-執行以下命令安裝所需依賴項目：
 ```pip install tqdm pdfplumber PyMuPDF easyocr pillow numpy tenacity voyageai ```
+
+---
 
 ## **4. Voyage-Multilingual-2 說明**
 
