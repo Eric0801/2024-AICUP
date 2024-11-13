@@ -1,3 +1,4 @@
+# pip install pdfplumber fitz easyocr tqdm numpy Pillow
 import os
 import json
 import argparse

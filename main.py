@@ -33,7 +33,7 @@ from voyageai.object import  RerankingObject
 
 
 if __name__ == "__main__":
-    api_key = ""
+    api_key = "" # 此處需自行填入API金鑰
     
     reader = easyocr.Reader(['en', 'ch_tra'])
     client = voyageai.Client(api_key=api_key)
