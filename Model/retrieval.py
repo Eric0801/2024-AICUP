@@ -65,8 +65,18 @@ class Client(_BaseClient):
         return result
 
 
-# 根據查詢語句和指定的來源，檢索答案
 def retrieve(client,qs, source, corpus_dict):
+    """
+    根據查詢從語料庫中檢索最相關的文件。
+    Args:
+        client (Client): 用於重新排序文件的Voyage AI客戶端。
+        qs (str): 查詢字串。
+        source (List[int]): 要考慮的來源文件ID列表。
+        corpus_dict (Dict[int, str]): 一個字典，其中鍵是文件ID，值是文件文本。
+    Returns:
+        int: 最相關文件的文件ID。
+    """
+    
     filtered_corpus = [corpus_dict[int(file)] for file in source]
 
     reranking = client.rerank(qs, filtered_corpus, model="rerank-2", top_k=1)#呼叫外部API
